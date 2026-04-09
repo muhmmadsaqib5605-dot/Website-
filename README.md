@@ -1,2 +1,148 @@
 # Website-
-Clothes website 
+Clothes website
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Talha Lund Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+        }
+
+        header {
+            background: black;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            animation: fadeIn 2s;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, black, #333);
+            animation: slideUp 2s;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            color: gold;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: gold;
+            color: black;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: red;
+            color: white;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #222;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 15px;
+            width: 150px;
+            text-align: center;
+            transition: 0.3s;
+            animation: fadeIn 2s;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            margin-top: 20px;
+        }
+
+        a {
+            color: gold;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes slideUp {
+            from {transform: translateY(50px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    TALHA LUND COMPANY
+</header>
+
+<section class="hero">
+    <h1>🔥 Premium Clothing Brand 🔥</h1>
+    <p>Best Quality | Trendy Style | Affordable Price</p>
+    <button class="btn">Shop Now</button>
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/150">
+        <h3>T-Shirt</h3>
+        <p>Rs.1500</p>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/150">
+        <h3>Hoodie</h3>
+        <p>Rs.2500</p>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/150">
+        <h3>Jacket</h3>
+        <p>Rs.4000</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>📞 Contact Us:</p>
+    <a href="tel:+923242994136">+92 324 2994136</a>
+    <p>© 2026 Talha Lund Company | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
